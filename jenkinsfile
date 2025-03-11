@@ -1,10 +1,4 @@
 pipeline {
-properties([
-    pipelineTriggers([
-        pollSCM('H/5 * * * *')
-    ])
-])
-
     agent any
     environment {
         GITHUB_TOKEN = credentials('GitHub-Credentials')
@@ -18,3 +12,4 @@ properties([
         }
     }
 }
+
