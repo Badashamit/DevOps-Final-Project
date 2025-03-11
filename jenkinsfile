@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/YOUR_USERNAME/DevOps-Final-Project.git',
+                git url: 'https://github.com/Badashamit/DevOps-Final-Project.git',
                     credentialsId: 'GitHub-Credentials'
             }
         }
